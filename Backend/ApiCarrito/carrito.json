@@ -1,0 +1,20 @@
+[
+    {
+        "id":"1",
+        "nombre":"Paracetamol",
+        "imgurl":"https://www.pharmacys.com.ec/wcsstore/DF_CatalogAsset/images/catalog/producto/fullimage/31149P-1.jpg",
+        "descripcion":"Analgésico y antipirético, inhibidor de la síntesis de prostaglandinas periférica y central por acción sobre la ciclooxigenasa. Bloquea la generación del impulso doloroso a nivel periférico",
+        "precio":14500 ,
+        "stock":50,
+        "cantidad":2
+    },
+    {
+        "id":2,
+        "nombre":"Bonfiest",
+        "imgurl":"https://farmapalacio.com/wp-content/uploads/2020/07/7702057841256.jpg",
+        "descripcion":"Analgésico, antipirético. Antiácido. Tratamiento de trastornos dispépticos generados por exceso de bebidas no alcohólicas y comidas.",
+        "precio":18600 ,
+        "stock":30,
+        "cantidad":5
+    }
+]
