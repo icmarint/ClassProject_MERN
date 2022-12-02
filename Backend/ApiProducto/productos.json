@@ -1,6 +1,6 @@
 [
     {
-        "id":"1",
+        "_id":"1",
         "nombre":"Dolex",
         "imgurl":"https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/es_CO/dolex-products/ninos2-tabletas/Ninos_Tab_408x300.png?auto=format",
         "descripcion":"Sirve para todas las dolencias",
@@ -8,7 +8,7 @@
         "stock":50
     },
     {
-        "id":"2",
+        "_id":"2",
         "nombre":"Paracetamol",
         "imgurl":"https://www.actuamed.com.mx/sites/default/files/paracetamol_tabs_500mg_c10_v2.png",
         "descripcion":"Analgésico y antipirético, inhibidor de la síntesis de prostaglandinas periférica y central por acción sobre la ciclooxigenasa. Bloquea la generación del impulso doloroso a nivel periférico",
@@ -16,7 +16,7 @@
         "stock":50
     },
     {
-        "id":"3",
+        "_id":"3",
         "nombre":"Acetaminofen",
         "imgurl":"https://www.farmalisto.com.co/95304/acetaminofen-500-mg-american-generics-caja-con-100-tabletas.jpg",
         "descripcion":"Medicamento común para aliviar el dolor ligero o moderado de dolores de cabeza, dolores musculares, períodos menstruales, resfriados y gargantas irritadas, dolores de muelas, dolores de espalda y para reducir la fiebre.",
@@ -24,7 +24,7 @@
         "stock":100
     },
     {
-        "id":"4",
+        "_id":"4",
         "nombre":"Bonfiest",
         "imgurl":"https://farmapalacio.com/wp-content/uploads/2020/07/7702057841256.jpg",
         "descripcion":"Analgésico, antipirético. Antiácido. Tratamiento de trastornos dispépticos generados por exceso de bebidas no alcohólicas y comidas.",
@@ -32,7 +32,7 @@
         "stock":30 
     },
     {
-        "id":"5",
+        "_id":"5",
         "nombre":"Mareol",
         "imgurl":"https://www.drogueriasgalenica.com/image/cache/catalog/packs/mareol_tabletas_50_mg-910x1155.png",
         "descripcion":"Mareol Evita y alivia el mareo con dimenhidrinato",

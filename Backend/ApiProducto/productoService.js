@@ -1,10 +1,16 @@
-let productos = require("./productos.json")
+const getMongo = require("./mongodb.js")
 let request = require("axios")
 
-const productosget = () => {
+//CRUD PRODUCTOS
+//Consultar productos
+const productosget = async () => {
+    const { collection, client } = await getConexiones()
+    const productos = await collection.find({}).toArray()
+    await getMongo.closeClientExport(client)
     return productos
 }
 
+//Consultar productos por id
 const productosgetid = (id) => {
     let producto = productos.find(
         (elemento)=>{
@@ -15,9 +21,12 @@ const productosgetid = (id) => {
     return producto
 }
 
-const productosSet = (producto)=>{
-    productos.push(producto)
-    return productos
+//Crear productos
+const productosSet = async (producto)=>{
+    const { collection, client } = await getConexiones()
+    await collection.insertMany(producto)
+    await getMongo.closeClientExport(client)
+    return await productosget()
 }
 
 let existencias = require("./productos.json")
@@ -48,4 +57,11 @@ module.exports.productosgetidExport = productosgetid;
 module.exports.productosSetExport = productosSet;
 
 module.exports.existenciasSetExport = existenciasSet;
+
+async function getConexiones() {
+    const nameDb = "farmacia"
+    const client = await getMongo.getClientExport(nameDb)
+    const collection = await getMongo.getCollectionExport(client, nameDb)
+    return { collection, client }
+}
 

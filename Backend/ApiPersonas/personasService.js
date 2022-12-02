@@ -1,13 +1,13 @@
 const getMongo = require("./mongodb.js")
 
-const ventasget = async () => {
+const personasget = async () => {
     const { collection, client } = await getConexiones()
-    const ventas = await collection.find({}).toArray()
+    const personas = await collection.find({}).toArray()
     await getMongo.closeClientExport(client)
-    return ventas
+    return personas
 }
 
-module.exports.ventasgetExport = ventasget;
+module.exports.personasgetExport = personasget;
 
 async function getConexiones() {
     const nameDb = "farmacia"

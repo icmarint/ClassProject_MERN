@@ -1,17 +1,17 @@
 [
     {
+        "_idventa":"1",
         "fecha":"27/09/2022",
-        "idventa":"123",
         "valor":35
     },
     {
+        "_idventa":"2",
         "fecha":"28/09/2022",
-        "idventa":"234",
         "valor":50
     },
     {
+        "_idventa":"3",
         "fecha":"29/09/2022",
-        "idventa":"543",
         "valor":10
     }
 ]

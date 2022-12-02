@@ -13,10 +13,9 @@ app.use(body_parse.json())
 const pathName = "/productos"
 
 app.get(pathName,
-    (req, res)=>{
+    async (req, res)=>{
         console.log("Recibimos petición")
-        console.log(req)
-        res.send(productosService.productosgetExport())
+        res.send(await productosService.productosgetExport())
     }
 )
 
@@ -30,11 +29,11 @@ app.get(pathName+"/id",
 )
 
 app.post(pathName,
-        (req, res)=>{
+        async (req, res)=>{
             console.log("Recibimos petición")
             console.log(req.body)
-            let productos = productosService.productosSetExport(req.body)
-            res.send({"mensaje":"Producto guardado","productos":productos})
+            let productos = await productosService.productosSetExport(req.body)
+            res.send({"mensaje":"Producto guardado", "productos":productos})
         }
     )
 
